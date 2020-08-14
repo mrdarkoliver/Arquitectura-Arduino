@@ -1,5 +1,7 @@
 #include <DHT.h>
+#include <iostream>
 
+using namespace std;
 
 int SENSOR = 2;
 int temp, humedad;//Configuro las variables de temperatura y humedad del DHT11
@@ -57,4 +59,9 @@ if (SensorNivel==1)
   }
    }  
   delay(1000);
+}
+
+int main(){
+  cout<<"Cuanto tiempo va a regar?";cin>>tiempo;
+  return 0;
 }
